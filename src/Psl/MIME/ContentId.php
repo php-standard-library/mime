@@ -58,7 +58,7 @@ final readonly class ContentId implements Stringable
      *
      * @throws EntropyException If the system cannot provide sufficient random bytes.
      */
-    public static function generate(string $domain = 'Psl.local'): self
+    public static function generate(string $domain = 'php-standard-library.dev'): self
     {
         try {
             $unique = bin2hex(random_bytes(16));
